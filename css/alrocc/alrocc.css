@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
+body,
+html {
+  margin: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #1c1c1c;
+  display: -ms-grid;
+  display: grid;
+  padding: 4em;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .btn-inicio {
+  text-decoration: none;
+  color: #F8CFA9;
+  margin-right: 50%;
+}
+
+header .btn-inicio:hover {
+  color: #6EEB83;
+  font-weight: bolder;
+}
+
+header .nav {
+  float: right;
+}
+
+header .nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .nav ul li {
+  margin: 1em;
+}
+
+header .nav ul li a {
+  text-decoration: none;
+  color: #F8CFA9;
+}
+
+header .nav ul li a:hover {
+  color: #6EEB83;
+}
+
+main {
+  color: #F19C49;
+  padding: 0;
+}
+
+main h1 {
+  font-size: 8vh;
+  margin-top: 1.5em;
+  margin-bottom: 0;
+}
+
+main h1::after {
+  content: '';
+  display: block;
+  border-top: 1px solid #F19C49;
+  width: 65vh;
+}
+
+main .grids {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  max-height: 100vh;
+}
+
+main .grids .gridcards {
+  float: left;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (50%)[auto-fit];
+      grid-template-columns: repeat(auto-fit, 50%);
+  grid-auto-rows: repeat auto-fit;
+      grid-template-areas: "logo colores" "dlogo dcolores";
+  padding: 0;
+  /*DCARDS*/
+}
+
+main .grids .gridcards .logo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: logo;
+  display: block;
+  background: #FFFFFF;
+  margin: 1em 1em 0 1em;
+}
+
+main .grids .gridcards .logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main .grids .gridcards .dlogo {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: dlogo;
+  display: block;
+  background: #646464;
+  margin: 0 1em 1em 1em;
+  text-align: center;
+}
+
+main .grids .gridcards .colores {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: colores;
+  display: block;
+  background: #FFFFFF;
+  margin: 1em 1em 0 1em;
+}
+
+main .grids .gridcards .colores img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main .grids .gridcards .dcolores {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: dcolores;
+  display: block;
+  background: #646464;
+  margin: 0 1em 1em 1em;
+  text-align: center;
+  padding: 0;
+}
+
+main .grids .gridcards p {
+  color: #F8CFA9;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+main .grids .gridimages {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (50%)[auto-fit];
+      grid-template-columns: repeat(auto-fit, 50%);
+  grid-auto-rows: 50% 50%;
+      grid-template-areas: "mp1 mp2" "mp3 mp4";
+  padding: 0;
+}
+
+main .grids .gridimages .mp1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: mp1;
+  margin: 1em 1em 0 1em;
+}
+
+main .grids .gridimages .mp1 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main .grids .gridimages .mp2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: mp2;
+  margin: 1em 1em 0 1em;
+}
+
+main .grids .gridimages .mp2 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main .grids .gridimages .mp3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: mp3;
+  margin: 0 1em 1em 1em;
+}
+
+main .grids .gridimages .mp3 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main .grids .gridimages .mp4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: mp4;
+  margin: 0 1em 1em 1em;
+}
+
+main .grids .gridimages .mp4 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+footer {
+  color: #646464;
+  text-align: center;
+  margin-top: 2em;
+}
+
+footer a {
+  text-decoration: underline;
+  color: #646464;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: #6EEB83;
+}
+/*# sourceMappingURL=alrocc.css.map */

@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+$margin: 1em;
+$margintop: 1em 1em 0 1em;
+$marginbottom: 0 1em 1em 1em;
+body,
+html {
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #1c1c1c;
+    display: grid;
+    padding: 4em;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .btn-inicio {
+        text-decoration: none;
+        color: #F8CFA9;
+        margin-right: 50%;
+        &:hover {
+            color: #6EEB83;
+            font-weight: bolder;
+        }
+    }
+    .nav {
+        float: right;
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            li {
+                margin: 1em;
+                a {
+                    text-decoration: none;
+                    color: #F8CFA9;
+                }
+                a:hover {
+                    color: #6EEB83;
+                }
+            }
+        }
+    }
+}
+
+main {
+    color: #F19C49;
+    padding: 0;
+    h1 {
+        font-size: 8vh;
+        margin-top: 1.5em;
+        margin-bottom: 0;
+    }
+    h1::after {
+        content: '';
+        display: block;
+        border-top: 1px solid #F19C49;
+        width: 65vh;
+    }
+    .grids {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        max-height: 100vh;
+        .gridcards {
+            float: left;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, 50%);
+            grid-auto-rows: repeat (auto-fit);
+            grid-template-areas: "logo colores" "dlogo dcolores";
+            padding: 0;
+            /*DCARDS*/
+            .logo {
+                grid-area: logo;
+                display: block;
+                background: #FFFFFF;
+                margin: $margintop;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .dlogo {
+                grid-area: dlogo;
+                display: block;
+                background: #646464;
+                margin: $marginbottom;
+                text-align: center;
+            }
+            .colores {
+                grid-area: colores;
+                display: block;
+                background: #FFFFFF;
+                margin: $margintop;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .dcolores {
+                grid-area: dcolores;
+                display: block;
+                background: #646464;
+                margin: $marginbottom;
+                text-align: center;
+                padding: 0;
+            }
+            p {
+                color: #F8CFA9;
+                font-size: 1em;
+                font-weight: bold;
+            }
+        }
+        .gridimages {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, 50%);
+            grid-auto-rows: 50% 50%;
+            grid-template-areas: "mp1 mp2" "mp3 mp4";
+            padding: 0;
+            .mp1 {
+                grid-area: mp1;
+                margin: $margintop;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .mp2 {
+                grid-area: mp2;
+                margin: $margintop;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .mp3 {
+                grid-area: mp3;
+                margin: $marginbottom;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .mp4 {
+                grid-area: mp4;
+                margin: $marginbottom;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    color: #646464;
+    text-align: center;
+    margin-top: 2em;
+    a {
+        text-decoration: underline;
+        color: #646464;
+    }
+    a:hover {
+        text-decoration: none;
+        color: #6EEB83
+    }
+}
