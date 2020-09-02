@@ -26,7 +26,6 @@ a {
 }
 
 main {
-    background: #FFBB17;
     grid-area: main;
     padding: 0;
     margin: 0;
@@ -42,7 +41,7 @@ main {
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #FFBB17;
+            color: #6EEB83;
             list-style-type: none;
             .ppic {
                 width: 10vw;
@@ -58,7 +57,7 @@ main {
                 h1::after {
                     display: block;
                     content: '';
-                    border-top: 1px solid #FFBB17;
+                    border-top: 1px solid #6EEB83;
                 }
                 p {
                     font-size: 2.7vh;
