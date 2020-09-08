@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  font-family: 'Poppins';
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background: #171D5e;
+  background-image: url(/images/textura.png);
+  background-size: cover;
+}
+
+h1 {
+  margin: 0;
+}
+
+.gridcontainer {
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: auto auto auto auto auto;
+      grid-template-rows: auto auto auto auto auto;
+      grid-template-areas: "nav" "main" "am" "cont" "footer";
+  display: -ms-grid;
+  display: grid;
+}
+
+.fondo {
+  background-image: url(/images/bgimg.png);
+  background-color: #0e123b;
+  background-size: cover;
+}
+
+.nav {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: nav;
+  margin: 2em;
+  font-size: 1.2em;
+}
+
+.nav ul {
+  margin: auto;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: right;
+}
+
+.nav ul a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.nav ul a:hover {
+  text-decoration: none;
+  color: #2DEA8F;
+}
+
+.nav ul li {
+  margin-left: 1em;
+}
+
+.nav ul .active {
+  font-weight: bold;
+}
+
+main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: main;
+  padding: 10em 3em;
+}
+
+main h1 {
+  font-size: 3.5em;
+}
+
+main .txt .maintxt {
+  color: #ffffff;
+}
+
+main .txt .hightxt {
+  color: #2DEA8F;
+}
+
+main p {
+  color: white;
+  font-size: 1.75em;
+  margin-top: .2em;
+}
+
+.aboutme {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: am;
+  color: #ffffff;
+  padding: 5em 3em;
+}
+
+.aboutme h1 {
+  color: #2DEA8F;
+  font-size: 2em;
+}
+
+.aboutme p {
+  margin: .3em 0;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: cont;
+  width: 90%;
+  margin-top: 3em;
+  padding: 3em;
+  color: #ffffff;
+  text-align: center;
+}
+
+.container .submain {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.grid-item {
+  margin: .5em;
+}
+
+.content {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  margin-top: 1em;
+}
+
+.content h2 {
+  margin: .2em .5em;
+  font-size: 1em;
+}
+
+@media (max-width: 768px) {
+  .fondo {
+    background-image: url(/images/bgimg2.png);
+  }
+}
+/*# sourceMappingURL=main.css.map */
