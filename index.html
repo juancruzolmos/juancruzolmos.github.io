@@ -4,76 +4,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Juan Cruz Olmos</title>
+    <title>Inicio | JuanCruzOlmos</title>
     <link rel="stylesheet" href="css/main/main.css">
 </head>
 
 <body>
     <div class="gridcontainer">
-
-        <main>
-            <div class="maincontainer">
-                <ul class="mainlayout">
-                    <li>
-                        <img class="ppic" src="images/ppic.png" alt="me">
-                    </li>
-                    <li>
-                        <ul class="maintext">
-                            <li>
-                                <h1>PORTFOLIO</h1>
-                            </li>
-                            <li>
-                                <p>juan cruz olmos</p>
-                            </li>
-                        </ul>
-                    </li>
+        <div class="fondo">
+            <div class="nav">
+                <ul>
+                    <li class="active"><a href="index.html">inicio </a></li>
+                    <li><a href="cv.html">currículum</a></li>
+                    <li><a href="contact.html">contacto</a></li>
                 </ul>
             </div>
-        </main>
 
-        <div class="dest1">
-            <div class="dest1-container">
-                <a href="alrocc.html"><img src="images/trabajos/alrocc.png" alt=""></a>
-            </div>
-
+            <main>
+                <div class="txt">
+                    <h1>
+                        <span class="maintxt">Hola, soy</span>
+                        <span class="hightxt">Juan Cruz</span>
+                    </h1>
+                </div>
+                <div class="txt">
+                    <h1>
+                        <span class="maintxt">un</span>
+                        <span class="hightxt">Publicista y Diseñador</span>
+                        <span class="maintxt">.</span>
+                    </h1>
+                </div>
+                <p class="submain">un gusto verte por acá!</p>
+            </main>
         </div>
 
-        <div class="dest2">
-            <div class="dest2-container">
-                <a href="sbrand.html"><img src="images/trabajos/sbrand.png" alt=""></a>
+        <div class="aboutme">
+            <h1>Sobre mí</h1>
+            <p>Tengo 20 años. Actualmente estoy cursando segundo año de la Licenciatura en Publicidad en la Universidad Siglo XXI.</p>
+            <p>Soy fan del diseño y me mantengo actualizado ante sus nuevas tendencias.</p>
+            <p>Aprendo mucho por mis propios medios, en este momento estoy aprendiendo Frontend Development</p>
+        </div>
+        <div class="container">
+            <p class="submain">ESTOS SON MIS TRABAJOS</p>
+
+            <div class="grid">
+                <div class="grid-col grid-col--1">
+
+                </div>
+                <div class="grid-col grid-col--2">
+
+                </div>
+                <div class="grid-col grid-col--3">
+
+                </div>
+
+
+                <div class="grid-item">
+                    <div class="content">
+                        <h2>Alrocc - Pastas Frescas</h2>
+                    </div>
+                    <a target="_blank" href="#"><img src="images/trabajos/alrocc.png" alt="Alrocc - Pastas Frescas"></a>
+                </div>
+
+                <div class="grid-item">
+                    <div class="content">
+                        <h2>Asociación Mutual Eslovena en Córdoba</h2>
+                    </div>
+                    <a target="_blank" href="#">
+                        <img src="images/trabajos/asoc.png" alt="Asociación Mutual Eslovena en Córdoba">
+                    </a>
+                </div>
+
+                <div class="grid-item">
+                    <div class="content">
+                        <h2>Fogo Catering</h2>
+                    </div>
+                    <a target="_blank" href="#">
+                        <img src="images/trabajos/fogo.png" alt="Fogo Catering">
+                    </a>
+                </div>
+
+                <div class="grid-item">
+                    <div class="content">
+                        <h2>Globalpas</h2>
+                    </div>
+                    <a target="_blank" href="#">
+                        <img src="images/trabajos/global.png" alt="Globalpas">
+                    </a>
+                </div>
+
+                <div class="grid-item">
+                    <div class="content">
+                        <h2>Logofolio</h2>
+                    </div>
+                    <a target="_blank" href="#">
+                        <img src="images/trabajos/logof.png" alt="Logofolio">
+                    </a>
+                </div>
+
+                <div class="grid-item">
+                    <div class="content">
+                        <h2>Pibi</h2>
+                    </div>
+                    <a target="_blank" href="#">
+                        <img src="images/trabajos/pibi.png" alt="Pibi">
+                    </a>
+                </div>
+
+                <div class="grid-item">
+                    <div class="content">
+                        <h2>SelfBranding</h2>
+                    </div>
+                    <a target="_blank" href="#">
+                        <img src="images/trabajos/selfb.png" alt="SelfBranding">
+                    </a>
+                </div>
             </div>
         </div>
 
-        <div class="dest3">
-            <div class="dest3-container">
-                <a href="logof.html"><img src="images/trabajos/logof.png" alt=""></a>
 
-            </div>
-        </div>
 
-        <div class="dest4">
-            <div class="dest4-container">
-                <a href="global.html"><img src="images/trabajos/global.png" alt=""></a>
-            </div>
-        </div>
 
-        <header>
-            <div class="headercontainer">
-                <nav class="headernav">
-                    <ul>
-                        <li><a href="#">trabajos</a></li>
-                        <li><a href="#">contacto</a></li>
-                        <li><a href="#">currículum</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-
-        <footer>
-            <p>ante cualquier consulta, no dudes en <a href="mailto:juancruzolmosv@gmail.com">contactarme</a></p>
-        </footer>
 
     </div>
+
+    <script src="https://unpkg.com/colcade@0/colcade.js"></script>
+    <script>
+        var colc = new Colcade('.grid', {
+            columns: '.grid-col',
+            items: '.grid-item'
+        });
+    </script>
+
 </body>
 
 </html>
